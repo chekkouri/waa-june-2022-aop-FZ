@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: ecommerce
+  datasource:
+    password: Ftz123.*?
+    url: jdbc:postgresql://postgresql-81093-0.cloudclusters.net:18430/springData
+    username: ftz
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
+    show-sql: true
+    defer-datasource-initialization: true
+  sql:
+    init:
+      mode: always
+server:
+  port: 8080
